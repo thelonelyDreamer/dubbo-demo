@@ -1,0 +1,10 @@
+server:
+  port: 12020
+dubbo:
+  application:
+    name: module1
+  registry:
+    protocol: zookeeper
+    address: localhost:2181
+  scan:
+    base-packages: com.felixwc.dubbo.demo1.service.remote
