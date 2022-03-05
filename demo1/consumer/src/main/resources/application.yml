@@ -1,0 +1,16 @@
+server:
+  port: 23120
+dubbo:
+  registry:
+    protocol: zookeeper
+    address: zookeeper://localhost:2181
+  application:
+    name: dubbo-comsumer
+  monitor:
+    address: localhost:23456
+  protocol:
+    name: dubbo
+    port: 20000
+spring:
+  application:
+    name: spring-dubbo-comsumer

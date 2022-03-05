@@ -2,9 +2,18 @@ server:
   port: 12020
 dubbo:
   application:
-    name: module1
+    name: dubbo-provider
   registry:
     protocol: zookeeper
     address: localhost:2181
   scan:
-    base-packages: com.felixwc.dubbo.demo1.service.remote
+    base-packages: com.felixwc.dubbo.demo1.provider.remote
+  protocol:
+    name: dubbo
+    port: 38080
+  monitor:
+    address: localhost:23456
+
+spring:
+  application:
+    name: spring-dubbo-provider

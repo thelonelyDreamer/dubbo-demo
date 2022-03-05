@@ -1,17 +1,19 @@
-package com.felixwc.dubbo.demo1;
+package com.felixxw.dubbo.demo1.consumer;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * in order to learn java!
- * created at 2021/11/5 19:32
+ * created at 2022/2/25 22:51
  *
  * @author wangchao
  */
 @SpringBootApplication
-public class BootApp {
+@EnableDubbo
+public class BootConsumer {
     public static void main(String[] args) {
-        SpringApplication.run(BootApp.class,args);
+        SpringApplication.run(BootConsumer.class,args);
     }
 }
